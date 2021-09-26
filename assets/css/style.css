@@ -1,0 +1,985 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid #f84210; */
+}
+
+*:focus {
+    outline: none;
+}
+
+
+.home-container{
+    background-image: url('../img/bg-img.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-cover{
+    background-color: #FFFFFB;
+    top:0;
+    left:0;
+    padding:0;
+    margin:0;
+    z-index:1000;
+    color: #444444;
+    overflow: hidden;
+}
+
+.navbar-header{
+    text-align: center;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFB;
+    margin-top: 0;
+    height: 1vh;
+}
+
+textarea{
+    background: none;
+}
+
+.nav-bg-gradient{
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav-logo{
+    max-width: 100%;
+    height: auto;
+}
+
+.title{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.forgot-title{
+    text-transform: none;
+}
+
+.navbar-header{
+    justify-content: center;
+}
+
+.navbar-header>a,div{
+    justify-content: center;
+}
+
+.nav-item{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.user-welcome{
+    color: #fff;
+    background-color: #444;
+}
+
+.user-welcome:hover, .user-welcome:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #444;
+}
+  
+.user-welcome.active, .user-welcome:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #444;
+}
+
+.alert-massage>p{
+    margin-bottom: 0;
+}
+
+.sign-in-alert, .not-found{
+    display: block;
+    text-align: center;
+    letter-spacing: .1rem;
+}
+
+.sign-in-alert>a{
+    text-decoration: none;
+}
+
+/*Sign Up*/
+.signup-page, .singin-page{
+    margin-top: 10%;
+    margin-bottom: 70%;
+}
+
+@media (min-width: 600px) {
+    .signup-page, .singin-page{
+        margin-bottom: 70%;
+    }
+  }
+
+
+/* Home */
+
+.btn-search, .btn-explore{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.home-container{
+    width: 100%;
+    height: 100%;
+}
+
+.home-info{
+    margin-top: 10%;
+    margin-bottom: 50%;
+}
+
+.home-text{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 200;
+    letter-spacing: .2rem;
+    font-size: 1.3rem;
+}
+
+.home-select{
+    margin-top: 20%;
+    height: 20rem;
+}
+
+.home-select>button{
+    margin-top: 1%;
+    height: 4rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 1%;
+    padding-bottom: 1%;;
+}
+
+#search_btn{
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.5vh;
+    border-radius: 5px;
+}
+
+#search_recipe{
+    height: 100%;
+}
+
+.search_li:hover{
+    cursor: pointer;
+}
+
+.search-box{
+    position: relative;
+    width: 100%;
+}
+
+#recipe_list{
+    position: absolute;
+    top: 4.2rem;
+    padding-left: 3px;
+    z-index: 999;
+    width: 95%;
+}
+
+#recipe_list>ul{
+    background-color: #FFFFFf;
+    cursor: pointer;
+    z-index: 999;
+    padding: 1%;
+}
+
+#recipe_list>li{
+    padding: 1%;
+    font-size: 1.5rem;
+    width: 100%;
+    border-bottom: #444 1px solid;
+}
+
+.dot{
+    width: .5vh;
+    height: .5vh;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+.user-img{
+    border: 1px solid #FFFFFB;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: capitalize;
+    align-items: center;
+    vertical-align: middle;
+    background-color: #444444;
+    color: #FFFFFB;
+    overflow: hidden;
+}
+
+
+/* Posts */
+
+.postDate{
+    background-color: lightgray;
+    padding: 4px;
+    margin: 0 0;
+    display: block;
+}
+
+.pagination-links{
+    margin: 1.3rem 0;
+    align-items: center;
+    display: inline;
+}
+
+.pagination-links > strong{
+    padding: 1rem 1.45rem;
+    margin: 1rem;
+    background-color: #444;
+    border-radius: 15%;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #FFFFFB;
+}
+
+a.pagination-links{
+    padding: 1rem 1.45rem;
+    margin: 1rem;
+    background-color: #444;
+    border-radius: 15%;
+    text-decoration: none;
+    opacity: 85%;
+    font-size: 1rem;
+    color: #FFFFFB;
+}
+
+a.pagination-links:hover{
+    padding: 1rem 1.45rem;
+    margin: 1rem;
+    background-color: rgb(46, 45, 45);
+    border-radius: 15%;
+    text-decoration: none;
+    opacity: 85%;
+    font-size: 1rem;
+    color: #FFFFFB;
+}
+
+.each-post>div{
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 200px;
+    background-color: #444444;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.each-post>div:before{
+    background: rgba(68, 68, 68, 0.6);
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.each-post>div:hover::before{
+    background: rgba(68, 68, 68, 0.3);
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.posts-box{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.posts-index{
+    display: flex;
+    padding-left: 3%;
+    flex-flow: wrap;
+    justify-content: flex-start;
+}
+
+.slideshow-container{
+    padding-left: 3%;
+}
+
+.post{
+    height: 14.5rem;
+    width: 14.5rem;
+    position: relative;
+    margin-right:.5%;
+    margin-bottom: 1.5%;
+}
+
+.popular-post{
+    height: 28vh;
+    width: 95%;
+}
+
+.popular-post>a{
+    width: 100%;
+    height: 100%;
+}
+
+.popular-post>a>div{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.popular-post-thumb{
+    width: 100%;
+    margin-top: -10%;
+}
+
+.post-title{
+    position: absolute;
+    text-overflow: ellipsis; 
+    font-size: 1vw;
+    color: #FFFFFB;
+    width: 70%;
+    top: 60%;
+    margin-left: 2%;
+    border-bottom: 2.5px solid #FFFFFB;
+}
+
+.popular-post-title{
+    width: 40%;
+    font-size: 2vw;
+}
+
+.post-title>h5{
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.post-thumb{
+    z-index: -1;
+}
+
+.post-thumb:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    z-index: -99;
+}
+
+.explore-page{
+    margin-bottom: 10%;
+}
+
+/* Login */
+
+.input-area{
+    border: 2px solid #707070;
+    border-radius: 1rem;
+    text-align: center;
+    align-items: center;
+    padding: 4%;
+    padding-top: 5%;
+    bottom: 0;
+    overflow: auto;
+}
+
+.input-logo{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+input[name=username],
+input[name=phone],
+input[name=birthdate],
+input[type = password], 
+input[type = email]{
+    background: none;
+    color: #444;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 85%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #c6c6c6;
+
+}
+
+input:focus{
+    outline: none;
+    background: none;
+}
+
+button[type=submit]{
+    font-weight: 500;
+    color: #FFFFFB;
+}
+
+.btn{
+    border-radius: 5px;
+}
+
+#loginWithGoogle{
+    width: 4vw;
+    height: 1vh;
+    background-image: url('../img/elements/btn_google_signin_light_normal_web@2x.png');
+    background-size:cover;
+    display:inline-block; 
+}
+
+/* Create */
+input[type="file"]{
+    display: none;
+}
+
+.dropzone{
+    width:300px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    color: #ccc;
+    line-height: 300px;
+    text-align: center;
+}
+
+.dropzone.dragover{
+    border-color: #444;
+    color: #444;
+}
+
+.btn-upload{
+    background-color: #fc6136;
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #FFFFFB;
+    border-radius: .5rem;
+}
+
+.btn-upload:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #f84210;
+    transition-duration:.5s;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.cover-img-shown, .defualt-cover-img{
+    width: 100%;
+    height: 20vh;
+    background-image: url('../img/elements/upload.png');
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #444;
+    border-radius: 1rem;
+    border: #707070 solid 1px;
+}
+
+.login-img{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+}
+
+.form-create{
+    border: #707070 solid 1px;
+    background: transparent;
+}
+
+.form-create:focus{
+    background: transparent;
+}
+
+.create-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border: #707070 solid 1px;
+    padding: 2%;
+    border-radius: 1rem;
+}
+
+.create-title>label{
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.form-control{
+    padding: 2%;
+    border: #707070 solid 1px;
+}
+
+.slections, .ingredient_entry{
+    display: inline-flex;
+    width: 100%;
+}
+
+.ingredient_entry>div{
+    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    padding-right: 1%;
+}
+
+.td-item{
+    width: 100%;
+}
+
+.form_item{
+    margin-top: 1%;
+}
+
+#dynamic_field2 > div{
+    height: 100%;
+    position: relative;
+}
+
+#dynamic_field2 > p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.title-entry{
+    background: transparent;
+    resize: none;
+    width: 60%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #444;
+    margin-right: 1%;
+    height: 3vh;
+    color: #444;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+input[name*=ingre_name],
+input[name*=ingre_portion],
+input[name*=step_content],
+select[name=portion],
+select[name=cook_time]{
+    background: transparent;
+}
+
+/*View*/
+
+.post-img-view{
+    width: 100%;
+}
+
+.view-page{
+    margin-bottom: 10%;
+}
+
+.comment-info{
+    margin-left: 1vw;
+}
+
+.comment-box{
+    padding: .2%;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+}
+
+#send-comment{
+    height: 90%;
+}
+
+.no-comment{
+    width: 100%;
+    text-align: center;
+}
+
+.comment-area{
+    outline: none;
+    background: transparent;
+    color: transparent;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #444;
+    height: 30%;
+    margin-right: 1%;
+    color: #444;
+}
+
+.comment-area:focus{
+    outline: none;
+    background: transparent;
+    color: transparent;
+    resize: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #444;
+    height: 30%;
+    margin-right: 1%;
+    color: #444;
+}
+
+.create-text-info{
+    margin-left: 1%;
+    width: 100%;
+}
+
+.ingredients-view-area{
+    border: #444 solid 1px;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1%;
+}
+
+.post-body{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.collection{
+    margin-left: 1%;
+}
+
+.user-edit-btns{
+    margin-left: 1%;
+}
+
+.user-edit-btn2{
+    margin-left: 1%;
+}
+
+.view-img{
+    background-color: #444;
+    background-position: center center;
+    background-size:100% 20vh;
+    overflow-x: hidden;
+    height: 100%;
+    border-radius: 1rem;
+    width: 100%;
+    border: #444 solid 1px;
+}
+
+.per-ingre>div{
+    padding: 1%;
+}
+
+.per-step{
+    padding: 2%;
+}
+
+.header1{
+    padding-left: 6%;
+    padding-right: 9%;
+}
+
+.ingre-col{
+    width: 50%;
+    padding-right: 2%;
+}
+
+.ingre-name>div>div{
+    padding-left: 3%;
+    align-items: center;
+}
+
+.ingre-portion{
+    align-items: center;
+}
+
+input[type = checkbox]{
+    background: transparent;
+}
+
+h6{
+    margin-bottom: 0;
+}
+
+/*About*/
+.about-page, .profile-page, .mylist-page{
+    padding-bottom: 60%;
+}
+
+/*My List*/
+.choice{
+    padding: 2%;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.choice:nth-child(1){
+    border-right: 1px solid #444;
+}
+
+.choices>div{
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+}   
+
+/*Profile*/
+.personal-info{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image_area {
+    position: relative;
+}
+
+#uploaded_image, #uploaded_image_home {
+    display: block;
+    max-width: 100%;
+}
+
+.preview {
+    overflow: hidden;
+    width: 8rem;
+    height: 8rem;
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.modal-lg{
+    max-width: 1000px !important;
+    height: 40%;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    height: 0;
+    transition: .3s ease;
+    width: 10rem;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.overlay-cover{
+    width: 30rem;
+}
+
+.image_area:hover .overlay{
+    height: 30%;
+    cursor: pointer;
+}
+
+.overlay>.text{
+    color: #333;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 10rem;
+}
+
+.text_cover{
+    width: 18.75rem;
+}
+
+#sample_image{
+    width: 100%;
+}
+
+.other-info-col{
+    padding-bottom: 2.5%;
+    padding-left: 10%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.slide-arrows{
+    position: absolute;
+    width: 97%;
+    margin-left: -2.5%;
+    top: 35%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 1%;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: #f7b733;
+    color: #FFFFFB;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: .8rem;
+    width: .8rem;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .9}
+    to {opacity: 1.3}
+}
+
+@keyframes fade {
+    from {opacity: .9}
+    to {opacity: 1.3}
+}
+
+.switch-button {
+    background: rgba(255, 255, 255, 0.56);
+    border-radius: 30px;
+    overflow: hidden;
+    width: 240px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #155FFF;
+    position: relative;
+    padding-right: 120px;
+    position: relative;
+}
+
+.switch-button:before {
+    content: "Video";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.switch-button-checkbox{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+
+.switch-button-checkbox:checked,
+.switch-button-label:before {
+    transform: translateX(120px);
+    transition: transform 300ms linear;
+}
+
+.switch-button-label {
+        position: relative;
+        padding: 15px 0;
+        display: block;
+        user-select: none;
+        pointer-events: none;
+}
+.switch-button-label:before {
+    content: "";
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+    transform: translateX(0);
+    transition: transform 300ms;
+}
+
+.switch-button-label-span {
+    position: relative;
+}
